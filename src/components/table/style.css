@@ -1,0 +1,59 @@
+.dark{
+    --baseColor: #313943;
+    --baseOddColor: #343D48;
+    --borderColor: #4F575F;
+    --fontColor: #9ba7b4;
+}
+
+.light{
+    --baseColor: #FFFFFF;
+    --baseOddColor: #F8F8F8;
+    --borderColor: #E4E3E2;
+    --fontColor: #555e68;
+}
+
+.table > thead{
+    box-shadow: inset 0 -1px 0 var(--borderColor);
+}
+
+.table > tfoot{
+    box-shadow: inset 0 1px 0 var(--borderColor);
+    height: 40px;
+}
+
+.table .filter-row{
+    box-shadow: inset 0 1px 0 var(--borderColor);
+}
+
+.col-width{
+    width: var(--colWidth);
+}
+
+.bg-base{
+    background-color: var(--baseColor);
+}
+
+.bg-base-odd{
+    background-color: var(--baseOddColor);
+}
+
+.border-color{
+    border-color: var(--borderColor);
+}
+
+.text-color{
+    color: var(--fontColor);
+}
+
+.row-select-checkbox{
+    box-shadow: inset -1px 0 0 var(--borderColor);
+    z-index: 1;
+}
+
+.table thead .row-select-checkbox{
+    box-shadow: inset 0 -1px 0 var(--borderColor),inset -1px 0 0 var(--borderColor);
+}
+
+.th-content{
+    min-height: 24px;
+}
